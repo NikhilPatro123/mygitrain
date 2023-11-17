@@ -1,0 +1,42 @@
+application:
+  config:
+     shadowfax:
+        csv-path: /tmp/Shadowfaxpincode.csv
+
+gst:
+   validationApi:
+     key: dqebZxztUddazyjb95lbyNTZzzK2
+     
+
+endpoints:
+  api1:
+    base-url: http://sheet.gstincheck.ml
+     
+
+feign:
+  #The next attributes are handled manually, as there is a bug when setting timeouts and disabling follow redirects
+  connectTimeout: 5000
+  readTimeout: 5000
+  followRedirects: false
+  ignore-ssl: false
+  #end
+  client.config:
+    default:
+      loggerLevel: BASIC
+  compression:
+    request.enabled: true
+    response.enabled: true
+  okhttp.enabled: true
+
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: admin
+      password: admin
+      database: HSNCODEGST
+      port: 27017
+      host: localhost
+        
+   
