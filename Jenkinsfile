@@ -26,7 +26,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh "mvn deploy"
+                sh 'ssh vn19690@193.164.133.65'
 
             }
         }
