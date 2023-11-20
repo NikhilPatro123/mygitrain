@@ -26,7 +26,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'ssh-keygen "cd /nkp/deploy && ./deploy.sh"'
+                sh 'ssh-keygen'
 
             }
         }
