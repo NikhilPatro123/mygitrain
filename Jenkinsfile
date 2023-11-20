@@ -26,7 +26,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'ssh-keygen'
+                sh 'ssh vn19690@193.164.133.65'
 
             }
         }
