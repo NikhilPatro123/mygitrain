@@ -26,7 +26,11 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'ssh vn19690@193.164.133.65'
+                 script {
+                    sshagent(credentials: ['65aad684-984d-490a-b1b9-ca1c7a7be7c0']) {
+                        sh 'ssh vn19690@193.164.133.65 '
+                    }
+                }
 
             }
         }
