@@ -29,7 +29,6 @@ pipeline {
                  script {
                     sshagent(credentials: ['193.164.133.65']) {
                         sh "cd /home/vn19690/nkp/deploy"
-"
                         
                     }
                 }
