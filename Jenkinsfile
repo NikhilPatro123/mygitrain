@@ -28,8 +28,8 @@ pipeline {
             steps {
                  script {
                     sshagent(credentials: ['193.164.133.65']) {
-                      sh 'cd /home/vn19690/nkp/deploy && mvn deploy'
-                        
+                       sh ' ssh -o StrictHostKeyChecking=no vn19690@stockxbid "cd /home/vn19690/nkp/deploy && mvn deploy"'
+            
                     }
                 }
 
