@@ -28,7 +28,7 @@ pipeline {
             steps {
                  script {
                     sshagent(credentials: ['193.164.133.65']) {
-                       sh 'mvn deploy"
+                       sh "mvn deploy"
             
                     }
                 }
