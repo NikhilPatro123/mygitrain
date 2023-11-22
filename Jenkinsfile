@@ -28,7 +28,7 @@ pipeline {
             steps {
                  script {
                     sshagent(credentials: ['65aad684-984d-490a-b1b9-ca1c7a7be7c0']) {
-                        sh 'ssh vn19690@193.164.133.65 '
+                         sh 'ssh -o StrictHostKeyChecking=no vn19690@193.164.133.65 "cd /home/vn19690/nkp/deploy && git pull"'
                     }
                 }
 
