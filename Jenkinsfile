@@ -28,7 +28,7 @@ pipeline {
             steps {
                  script {
                     sshagent(credentials: ['193.164.133.65']) {
-                         "cd /home/vn19690/nkp/deploy"
+                         "cd /home/vn19690/nkp/deploy && git pull"
                         
                     }
                 }
