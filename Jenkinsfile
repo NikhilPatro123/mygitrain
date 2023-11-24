@@ -42,7 +42,7 @@ pipeline {
             steps {
                 script {
                     // Restart Tomcat on the remote server (adjust the command based on your Tomcat setup)
-                    sshagent(credentials: ['jenkins-ssh-key']) {
+                    sshagent(credentials: ['65aad684-984d-490a-b1b9-ca1c7a7be7c0']) {
                         sh "ssh -p ${TOMCAT_REMOTE_PORT} ${TOMCAT_REMOTE_USER}@${TOMCAT_REMOTE_HOST} '${TOMCAT_REMOTE_PATH}/bin/shutdown.sh && sleep 5 && ${TOMCAT_REMOTE_PATH}/bin/startup.sh'"
                     }
                 }
