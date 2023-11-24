@@ -10,7 +10,7 @@ pipeline {
         TOMCAT_REMOTE_HOST = '193.164.133.65' // Replace with the actual IP or hostname
         TOMCAT_REMOTE_PORT = '8443' // Replace with the SSH port of the remote server
         TOMCAT_REMOTE_USER = 'vn19690' // Replace with the SSH user of the remote server
-        TOMCAT_REMOTE_PASSWORD = credentials('193.164.133.65') // Use Jenkins credentials to securely store SSH private key or password
+        TOMCAT_REMOTE_PASSWORD = credentials('65aad684-984d-490a-b1b9-ca1c7a7be7c0') // Use Jenkins credentials to securely store SSH private key or password
         TOMCAT_REMOTE_PATH = '/opt/tomcat/tomcat857' // Replace with the actual path to Tomcat on the remote server
     }
 
