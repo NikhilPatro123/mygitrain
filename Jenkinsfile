@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     // Copy the WAR file to the remote Tomcat webapps directory
-                    sshagent(credentials: ['65aad684-984d-490a-b1b9-ca1c7a7be7c0']) {
+                    sshagent(credentials: ['193.164.133.65']) {
                         sh "scp -P ${TOMCAT_REMOTE_PORT} target/your-app.war ${TOMCAT_REMOTE_USER}@${TOMCAT_REMOTE_HOST}:${TOMCAT_REMOTE_PATH}/webapps/"
                     }
                 }
