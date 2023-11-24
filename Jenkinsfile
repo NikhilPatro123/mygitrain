@@ -32,7 +32,7 @@ pipeline {
                 script {
                     // Copy the WAR file to the remote Tomcat webapps directory
                     sshagent(credentials: ['65aad684-984d-490a-b1b9-ca1c7a7be7c0']) {
-                        sh "scp -P ${TOMCAT_REMOTE_PORT} target/your-app.war ${TOMCAT_REMOTE_USER}@${TOMCAT_REMOTE_HOST}:${TOMCAT_REMOTE_PATH}/webapps/"
+                        sh "scp -P ${TOMCAT_REMOTE_PORT} target/stockxbid-email-0.0.1-SNAPSHOT.jar ${TOMCAT_REMOTE_USER}@${TOMCAT_REMOTE_HOST}:${TOMCAT_REMOTE_PATH}/webapps/"
                     }
                 }
             }
