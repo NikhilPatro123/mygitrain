@@ -1,5 +1,10 @@
 pipeline {
     agent any
+     tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "maven"
+    }
+
 
     environment {
         TOMCAT_REMOTE_HOST = '193.164.133.65' // Replace with the actual IP or hostname
