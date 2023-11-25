@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy to Tomcat') {
             steps {
                 // Copy the WAR file to the Tomcat webapps directory
-                sh "cp target/your-app.war ${TOMCAT_HOME}/webapps/"
+                sh "cp /var/lib/jenkins/workspace/tomcat-deploy-25/target/stockxbid-email-0.0.1-SNAPSHOT.jar ${TOMCAT_HOME}/webapps/"
             }
         }
 
