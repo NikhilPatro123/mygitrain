@@ -28,8 +28,8 @@ pipeline {
         stage('Deploy to Tomcat') {
             steps {
                 // Copy the WAR file to the Tomcat webapps directory
-                sh "sudo cp target/stockxbid-email-0.0.1-SNAPSHOT.jar ${TOMCAT_HOME}/webapps/"
-                sh"12345"
+                sh "cp target/stockxbid-email-0.0.1-SNAPSHOT.jar ${TOMCAT_HOME}/webapps/"
+                
             }
         }
 
