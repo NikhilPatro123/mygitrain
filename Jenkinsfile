@@ -36,7 +36,7 @@ pipeline {
         stage('Restart Tomcat') {
             steps {
                 // Restart Tomcat (adjust the command based on your Tomcat setup)
-                sh "systemctl restart tomcat.service"
+                sh "${TOMCAT_HOME}/bin/shutdown.sh"
                 sh "${TOMCAT_HOME}/bin/startup.sh"
             }
         }
