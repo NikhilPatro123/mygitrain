@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        TOMCAT_HOME = '/opt/tomcat/apache-tomcat-9.0.83/'
+        TOMCAT_HOME = '/opt/tomcat/apache-tomcat-9.0.83'
     
     }
 
