@@ -9,3 +9,4 @@ ADD target/stockxbid-email-0.0.1-SNAPSHOT.jar /app/stockxbid-email-0.0.1-SNAPSHO
 ENTRYPOINT java -jar /app/stockxbid-email-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 
+nikhilnew
