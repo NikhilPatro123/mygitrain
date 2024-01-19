@@ -1,4 +1,3 @@
-AKJSKJSJ
 FROM openjdk:8-jdk-alpine
 MAINTAINER scr-sdd@stockxbid.com
 ENV HOME=/app
