@@ -1,4 +1,4 @@
 # stockxbid-Email 123
 # this is email notification
 
-nikhil patro [ajsj
+nikhil patro
